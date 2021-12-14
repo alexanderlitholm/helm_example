@@ -6,7 +6,7 @@
         ```
         curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.11.1/kind-$(uname)-amd64"
         chmod +x ./kind
-        mv ./kind /some-dir-in-your-PATH/kind
+        mv ./kind /usr/local/bin
         ```
 * Install <a href="https://helm.sh/docs/intro/install/">Helm</a>
     - From script: <br>
