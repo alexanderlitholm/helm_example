@@ -19,10 +19,12 @@
 - - -
 ### **Installation and Setup**
 * Create your cluster using kind:<br>`kind create cluster`
-* Install the ingress-nginx and create the namespace: <br>`helm upgrade
---install ingress-nginx ingress-nginx
---repo https://kubernetes.github.io/ingress-nginx 
---namespace ingress-nginx --create-namespace`
+* Install the ingress-nginx and create the namespace: <br>
+    ```
+    helm upgrade --install ingress-nginx ingress-nginx \
+    --repo https://kubernetes.github.io/ingress-nginx \
+    --namespace ingress-nginx --create-namespace
+    ```
 * Install wordpress using Helm:<br>`helm install happy-panda bitnami/wordpress`
 * Create the ingress resource:<br>`kubectl create ingress wordpress-localhost
 --class=nginx
